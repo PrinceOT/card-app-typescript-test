@@ -27,8 +27,7 @@ export default function EditEntry(){
         <section className="flex justify-center flex-col w-fit ml-auto mr-auto mt-10 gap-5 bg-gray-300 p-8 rounded-md">
             <input className="dark:bg-gray-400 dark:placeholder-black p-3 rounded-md" type="text" placeholder="Title" name="title" value={newEntry.title} onChange={handleInputChange}/>
             <textarea className="dark:bg-gray-400 dark:placeholder-black p-3 rounded-md" placeholder="Description" name="description" value={newEntry.description} onChange={handleInputChange}/>
-            <label htmlFor='scheduled_for'>Created At</label>
-            <input className="dark:bg-gray-400 p-3 rounded-md" type="date" name="created_at" value={(new Date(newEntry.created_at)).toISOString().split('T')[0]} onChange={handleInputChange}/>
+            
             <label htmlFor='scheduled_for'>Scheduled For </label>
             <input className="dark:bg-gray-400 p-3 rounded-md" type="date" name="scheduled_for" value={(new Date(newEntry.scheduled_for)).toISOString().split('T')[0]} onChange={handleInputChange}/>
            
